@@ -1,0 +1,62 @@
+package com.robomq.student;
+
+public class Book {
+	private int id;
+	private String name;
+	private String author;
+	private String publisher;
+	private int quantity;
+	
+	
+	public Book(){}
+	public Book(int id,String name,String author,String publisher,int quantity)
+	{
+		this.id=id;
+		this.name=name;
+		this.author=author;
+		this.publisher=publisher;
+		this.quantity=quantity;
+	}
+	public int getId() //getter for private property
+	{
+		return id;
+	}
+	public void setId(int id)//setter for private property
+	{
+		this.id=id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String Author) {
+		this.author = author;
+	}
+	public String getPublisher() {
+		return publisher;
+	}
+	public void setPublisher(String Publisher) {
+		this.publisher=publisher;
+	}
+	public int geQuantity()
+	{
+		return quantity;
+	}
+	public void setQuantity(int quantity)
+	{
+		this.quantity=quantity;
+	}
+	@Override
+	public String toString() {
+		return "Book [id=" + id + ", name=" + name + ", author=" + author + ", publisher=" + publisher + ", quantity="
+				+ quantity + "]"+"\n";
+	}
+	
+
+ 
+}
